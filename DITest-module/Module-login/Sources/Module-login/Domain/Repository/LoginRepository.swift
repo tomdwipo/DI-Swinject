@@ -14,9 +14,12 @@ protocol LoginRepository {
 struct LoginRepositoryImpl: LoginRepository {
     
     let network: LoginNetwork
+    let local: LocalData
     
     func getLogin() -> LoginModel {
-        return network.getLogin() 
+        var data = local.getDataLocal()
+        data = network.getLogin()
+        return data
     }
     
     

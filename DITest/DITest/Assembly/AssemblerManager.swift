@@ -7,12 +7,19 @@
 
 import Foundation
 import Swinject
+import Module_login
 
 class AssemblerManager {
- 
-    static let assembler = Assembler([
-        MainAssembly()
-    ])
     
-    static let viewcontroller = assembler.resolver.resolve(ViewController.self)!
+    static let viewControllerContainer: Container = {
+        let container = Container()
+        container.register(ViewController.self) { r in
+            let resolve = ViewController()
+            resolve.usecase = SetupModuleLogin().resolve()
+            return resolve
+        }
+        return container
+    }()
+    
+    static let viewcontroller = viewControllerContainer.resolve(ViewController.self)!
 }

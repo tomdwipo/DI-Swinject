@@ -20,7 +20,6 @@
 		AAEA4D962791511D007DD383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D942791511D007DD383 /* ViewController.swift */; };
 		AAEA4D972791511D007DD383 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D952791511D007DD383 /* ViewController.xib */; };
 		AAEA4D992791518A007DD383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D982791518A007DD383 /* Main.storyboard */; };
-		AAEA4D9C279152D0007DD383 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D9B279152D0007DD383 /* MainAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 		AAEA4D942791511D007DD383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAEA4D952791511D007DD383 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		AAEA4D982791518A007DD383 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		AAEA4D9B279152D0007DD383 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +171,6 @@
 		AAEA4D9A279152C1007DD383 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				AAEA4D9B279152D0007DD383 /* MainAssembly.swift */,
 				AAEA4D8D27914A94007DD383 /* AssemblerManager.swift */,
 			);
 			path = Assembly;
@@ -319,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEA4D9C279152D0007DD383 /* MainAssembly.swift in Sources */,
 				AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */,
 				AAEA4D962791511D007DD383 /* ViewController.swift in Sources */,
 				AAEA4D5027913D2F007DD383 /* AppDelegate.swift in Sources */,

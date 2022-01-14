@@ -6,6 +6,6 @@
 //
 
 import Foundation
-struct LoginModel {
+struct LoginModel: Codable {
     let message: String
 }

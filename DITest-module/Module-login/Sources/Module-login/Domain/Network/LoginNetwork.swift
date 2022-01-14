@@ -8,11 +8,18 @@
 import Foundation
 
 protocol LoginNetwork {
-     func getLogin() -> LoginModel
+    func getLogin() -> LoginModel
 }
 
 struct LoginNetworkImpl: LoginNetwork {
     func getLogin() -> LoginModel {
         return LoginModel(message: "Oke")
     }
+}
+
+struct LoginMockNetworkImpl: LoginNetwork {
+    func getLogin() -> LoginModel {
+        return LoginModel(message: "Mock")
+    }
+    
 }
