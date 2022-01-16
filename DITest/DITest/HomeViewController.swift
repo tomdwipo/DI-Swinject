@@ -1,28 +1,21 @@
 //
-//  NewViewController.swift
+//  HomeViewController.swift
 //  DITest
 //
 //  Created by Tommy on 14/01/22.
 //
 
 import UIKit
-import Module_login
-import MyLibrary
-class ViewController: UIViewController {
-    var usecase: GetMessageUseCase?
-    
+
+class HomeViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("test \(usecase?.getMessage()) \(MyLibrary().text)")
-        
+
         // Do any additional setup after loading the view.
     }
 
 
-    @IBAction func homeButon(_ sender: Any) {
-        present(AssemblerManager.homeVC, animated: true)
-    }
-    
     /*
     // MARK: - Navigation
 

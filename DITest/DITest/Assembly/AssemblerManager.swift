@@ -21,5 +21,16 @@ class AssemblerManager {
         return container
     }()
     
+    
+    static let HomeContainer: Container = {
+        let container = Container()
+        container.register(HomeViewController.self) { r in
+            let resolve = HomeViewController()
+            return resolve
+        }
+        return container
+    }()
+    
     static let viewcontroller = viewControllerContainer.resolve(ViewController.self)!
+    static let homeVC = HomeContainer.resolve(HomeViewController.self)!
 }

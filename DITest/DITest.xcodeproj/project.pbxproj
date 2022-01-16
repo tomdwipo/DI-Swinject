@@ -20,6 +20,9 @@
 		AAEA4D962791511D007DD383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D942791511D007DD383 /* ViewController.swift */; };
 		AAEA4D972791511D007DD383 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D952791511D007DD383 /* ViewController.xib */; };
 		AAEA4D992791518A007DD383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D982791518A007DD383 /* Main.storyboard */; };
+		AAF35460279199010052EF08 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = AAF3545F279199010052EF08 /* MyLibrary */; };
+		AAF3546327919B1F0052EF08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3546127919B1F0052EF08 /* HomeViewController.swift */; };
+		AAF3546427919B1F0052EF08 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF3546227919B1F0052EF08 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		AAEA4D942791511D007DD383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAEA4D952791511D007DD383 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		AAEA4D982791518A007DD383 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AAF3545E279198EE0052EF08 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyLibrary; path = "../../enigma-iOS/Project/DITest-module/MyLibrary"; sourceTree = "<group>"; };
+		AAF3546127919B1F0052EF08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AAF3546227919B1F0052EF08 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF35460279199010052EF08 /* MyLibrary in Frameworks */,
 				AAEA4D8C279149BA007DD383 /* Module-login in Frameworks */,
 				AAEA4D8127913D87007DD383 /* Swinject in Frameworks */,
 			);
@@ -132,6 +139,8 @@
 				AAEA4D5A27913D31007DD383 /* LaunchScreen.storyboard */,
 				AAEA4D5D27913D31007DD383 /* Info.plist */,
 				AAEA4D982791518A007DD383 /* Main.storyboard */,
+				AAF3546127919B1F0052EF08 /* HomeViewController.swift */,
+				AAF3546227919B1F0052EF08 /* HomeViewController.xib */,
 			);
 			path = DITest;
 			sourceTree = "<group>";
@@ -157,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				AAEA4D8527914812007DD383 /* Module-login */,
+				AAF3545E279198EE0052EF08 /* MyLibrary */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 			packageProductDependencies = (
 				AAEA4D8027913D87007DD383 /* Swinject */,
 				AAEA4D8B279149BA007DD383 /* Module-login */,
+				AAF3545F279199010052EF08 /* MyLibrary */,
 			);
 			productName = DITest;
 			productReference = AAEA4D4C27913D2F007DD383 /* DITest.app */;
@@ -290,6 +301,7 @@
 			files = (
 				AAEA4D5C27913D31007DD383 /* LaunchScreen.storyboard in Resources */,
 				AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */,
+				AAF3546427919B1F0052EF08 /* HomeViewController.xib in Resources */,
 				AAEA4D972791511D007DD383 /* ViewController.xib in Resources */,
 				AAEA4D992791518A007DD383 /* Main.storyboard in Resources */,
 			);
@@ -316,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF3546327919B1F0052EF08 /* HomeViewController.swift in Sources */,
 				AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */,
 				AAEA4D962791511D007DD383 /* ViewController.swift in Sources */,
 				AAEA4D5027913D2F007DD383 /* AppDelegate.swift in Sources */,
@@ -670,6 +683,10 @@
 		AAEA4D8B279149BA007DD383 /* Module-login */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "Module-login";
+		};
+		AAF3545F279199010052EF08 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
