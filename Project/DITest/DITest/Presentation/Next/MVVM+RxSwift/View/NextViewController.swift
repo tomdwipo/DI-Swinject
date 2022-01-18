@@ -12,10 +12,11 @@ class NextViewController: UIViewController {
 
     @IBOutlet weak var textlabel: UILabel!
     var viewModel: NextViewModel?
+    var resultText: Disposable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _ = viewModel?
+        resultText = viewModel?
               .resultText
               .observe(on: MainScheduler.instance)
               .subscribe({ text in
@@ -26,7 +27,7 @@ class NextViewController: UIViewController {
     }
     
     deinit {
-        viewModel?.resultText.dispose()
+        resultText?.dispose()
     }
     
     @IBAction func tapped(_ sender: Any) {
