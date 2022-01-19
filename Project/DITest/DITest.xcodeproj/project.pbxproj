@@ -16,17 +16,23 @@
 		AA479C292796E7D900F77211 /* MoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C282796E7D900F77211 /* MoreAssembly.swift */; };
 		AA479C2D2796EA1D00F77211 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C2B2796EA1D00F77211 /* NextViewController.swift */; };
 		AA479C2E2796EA1D00F77211 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA479C2C2796EA1D00F77211 /* NextViewController.xib */; };
-		AA479C31279704DE00F77211 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA479C30279704DE00F77211 /* RxSwift */; };
 		AA479C362797051B00F77211 /* NextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C352797051B00F77211 /* NextViewModel.swift */; };
 		AA479C39279707B700F77211 /* NextAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C38279707B700F77211 /* NextAssembly.swift */; };
+		AA479C3C2797F96300F77211 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AA479C3B2797F96300F77211 /* Swinject */; };
 		AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CA627957261001DD1F5 /* ViewModel.swift */; };
 		AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CB327958E89001DD1F5 /* HomePresenter.swift */; };
+		AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A992797FD010090C2ED /* RxCocoa */; };
+		AAC53A9C2797FD010090C2ED /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A9B2797FD010090C2ED /* RxRelay */; };
+		AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A9D2797FD010090C2ED /* RxSwift */; };
+		AAC53AA52797FE080090C2ED /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AA32797FE080090C2ED /* NewViewController.swift */; };
+		AAC53AA62797FE080090C2ED /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC53AA42797FE080090C2ED /* NewViewController.xib */; };
+		AAC53AA92797FE4B0090C2ED /* NewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */; };
+		AAC53AAB2797FEF90090C2ED /* NewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */; };
 		AAEA4D5027913D2F007DD383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */; };
 		AAEA4D5227913D2F007DD383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */; };
 		AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D5827913D31007DD383 /* Assets.xcassets */; };
 		AAEA4D5C27913D31007DD383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D5A27913D31007DD383 /* LaunchScreen.storyboard */; };
 		AAEA4D6727913D32007DD383 /* DITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D6627913D32007DD383 /* DITestTests.swift */; };
-		AAEA4D8127913D87007DD383 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AAEA4D8027913D87007DD383 /* Swinject */; };
 		AAEA4D8C279149BA007DD383 /* Module-login in Frameworks */ = {isa = PBXBuildFile; productRef = AAEA4D8B279149BA007DD383 /* Module-login */; };
 		AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D8D27914A94007DD383 /* AssemblerManager.swift */; };
 		AAEA4D962791511D007DD383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D942791511D007DD383 /* ViewController.swift */; };
@@ -75,6 +81,10 @@
 		AA479C38279707B700F77211 /* NextAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAssembly.swift; sourceTree = "<group>"; };
 		AA683CA627957261001DD1F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AA683CB327958E89001DD1F5 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AAC53AA32797FE080090C2ED /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		AAC53AA42797FE080090C2ED /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
+		AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewModel.swift; sourceTree = "<group>"; };
+		AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAssembly.swift; sourceTree = "<group>"; };
 		AAEA4D4C27913D2F007DD383 /* DITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,9 +109,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA479C31279704DE00F77211 /* RxSwift in Frameworks */,
+				AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */,
 				AAEA4D8C279149BA007DD383 /* Module-login in Frameworks */,
-				AAEA4D8127913D87007DD383 /* Swinject in Frameworks */,
+				AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */,
+				AAC53A9C2797FD010090C2ED /* RxRelay in Frameworks */,
+				AA479C3C2797F96300F77211 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +283,49 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
+		AAC53A9F2797FDCE0090C2ED /* New */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AA12797FDE60090C2ED /* Assembly */,
+				AAC53AA02797FDD40090C2ED /* MVVM+RxSwift+RxCocoa */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		AAC53AA02797FDD40090C2ED /* MVVM+RxSwift+RxCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AA72797FE380090C2ED /* ViewModel */,
+				AAC53AA22797FDF00090C2ED /* View */,
+			);
+			path = "MVVM+RxSwift+RxCocoa";
+			sourceTree = "<group>";
+		};
+		AAC53AA12797FDE60090C2ED /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		AAC53AA22797FDF00090C2ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AA32797FE080090C2ED /* NewViewController.swift */,
+				AAC53AA42797FE080090C2ED /* NewViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAC53AA72797FE380090C2ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AAEA4D4327913D2F007DD383 = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +438,7 @@
 		AAF354702791A2C60052EF08 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AAC53A9F2797FDCE0090C2ED /* New */,
 				AA479C2A2796EA0D00F77211 /* Next */,
 				AA479C142796E4AD00F77211 /* More */,
 				AAF3546D2791A1A00052EF08 /* Main */,
@@ -409,9 +465,11 @@
 			);
 			name = DITest;
 			packageProductDependencies = (
-				AAEA4D8027913D87007DD383 /* Swinject */,
 				AAEA4D8B279149BA007DD383 /* Module-login */,
-				AA479C30279704DE00F77211 /* RxSwift */,
+				AA479C3B2797F96300F77211 /* Swinject */,
+				AAC53A992797FD010090C2ED /* RxCocoa */,
+				AAC53A9B2797FD010090C2ED /* RxRelay */,
+				AAC53A9D2797FD010090C2ED /* RxSwift */,
 			);
 			productName = DITest;
 			productReference = AAEA4D4C27913D2F007DD383 /* DITest.app */;
@@ -464,8 +522,8 @@
 			);
 			mainGroup = AAEA4D4327913D2F007DD383;
 			packageReferences = (
-				AAEA4D7F27913D87007DD383 /* XCRemoteSwiftPackageReference "Swinject" */,
-				AA479C2F279704DE00F77211 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				AA479C3A2797F96300F77211 /* XCRemoteSwiftPackageReference "Swinject" */,
+				AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = AAEA4D4D27913D2F007DD383 /* Products */;
 			projectDirPath = "";
@@ -489,6 +547,7 @@
 				AA479C2E2796EA1D00F77211 /* NextViewController.xib in Resources */,
 				AAEA4D972791511D007DD383 /* ViewController.xib in Resources */,
 				AAEA4D992791518A007DD383 /* Main.storyboard in Resources */,
+				AAC53AA62797FE080090C2ED /* NewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEA4D9C279152D0007DD383 /* MainAssembly.swift in Sources */,
+				AAC53AAB2797FEF90090C2ED /* NewAssembly.swift in Sources */,
 				AA479C2D2796EA1D00F77211 /* NextViewController.swift in Sources */,
 				AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */,
 				AAEA4D962791511D007DD383 /* ViewController.swift in Sources */,
@@ -517,10 +577,12 @@
 				AA479C1D2796E52800F77211 /* MoreViewController.swift in Sources */,
 				AA479C362797051B00F77211 /* NextViewModel.swift in Sources */,
 				AA479C292796E7D900F77211 /* MoreAssembly.swift in Sources */,
+				AAC53AA92797FE4B0090C2ED /* NewViewModel.swift in Sources */,
 				AAF354672791A0730052EF08 /* HomeViewController.swift in Sources */,
 				AA479C262796E58000F77211 /* MoreRouter.swift in Sources */,
 				AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */,
 				AA479C242796E56B00F77211 /* MoreEntity.swift in Sources */,
+				AAC53AA52797FE080090C2ED /* NewViewController.swift in Sources */,
 				AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */,
 				AA479C39279707B700F77211 /* NextAssembly.swift in Sources */,
 				AAF3546A2791A12E0052EF08 /* HomeAssembly.swift in Sources */,
@@ -800,34 +862,44 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AA479C2F279704DE00F77211 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		AAEA4D7F27913D87007DD383 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		AA479C3A2797F96300F77211 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.8.0;
+				branch = master;
+				kind = branch;
+			};
+		};
+		AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA479C30279704DE00F77211 /* RxSwift */ = {
+		AA479C3B2797F96300F77211 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA479C2F279704DE00F77211 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		AAEA4D8027913D87007DD383 /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AAEA4D7F27913D87007DD383 /* XCRemoteSwiftPackageReference "Swinject" */;
+			package = AA479C3A2797F96300F77211 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		AAC53A992797FD010090C2ED /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		AAC53A9B2797FD010090C2ED /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		AAC53A9D2797FD010090C2ED /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 		AAEA4D8B279149BA007DD383 /* Module-login */ = {
 			isa = XCSwiftPackageProductDependency;

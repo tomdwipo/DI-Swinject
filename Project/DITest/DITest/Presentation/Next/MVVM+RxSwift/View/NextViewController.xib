@@ -34,15 +34,26 @@
                         <action selector="tapped:" destination="-1" eventType="touchUpInside" id="3Ez-oK-D9i"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHR-y1-E60">
+                    <rect key="frame" x="20" y="156" width="374" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="newPageTapped:" destination="-1" eventType="touchUpInside" id="hAE-TK-f0Q"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="DPf-WT-pt8" firstAttribute="top" secondItem="1wh-Cl-Jso" secondAttribute="bottom" constant="20" id="4gW-CU-T7g"/>
+                <constraint firstItem="YHR-y1-E60" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9wD-Rj-ae7"/>
                 <constraint firstAttribute="trailing" secondItem="DPf-WT-pt8" secondAttribute="trailing" constant="20" id="XYq-Zu-9QM"/>
                 <constraint firstItem="1wh-Cl-Jso" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="auf-n6-D0G"/>
                 <constraint firstItem="1wh-Cl-Jso" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="f5U-zR-gP0"/>
                 <constraint firstItem="DPf-WT-pt8" firstAttribute="top" secondItem="1wh-Cl-Jso" secondAttribute="bottom" constant="20" id="h5j-2q-3oa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YHR-y1-E60" secondAttribute="trailing" constant="20" id="ngU-MZ-fUb"/>
+                <constraint firstItem="YHR-y1-E60" firstAttribute="top" secondItem="DPf-WT-pt8" secondAttribute="bottom" constant="20" id="qEM-vS-Hg1"/>
                 <constraint firstItem="DPf-WT-pt8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ryJ-jp-6vR"/>
                 <constraint firstAttribute="trailing" secondItem="1wh-Cl-Jso" secondAttribute="trailing" constant="20" id="sHD-i4-0Fr"/>
             </constraints>

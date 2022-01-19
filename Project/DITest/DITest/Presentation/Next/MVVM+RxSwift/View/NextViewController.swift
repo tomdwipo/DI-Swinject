@@ -12,26 +12,27 @@ class NextViewController: UIViewController {
 
     @IBOutlet weak var textlabel: UILabel!
     var viewModel: NextViewModel?
-    var resultText: Disposable?
+    let disposeBag = DisposeBag()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultText = viewModel?
+        viewModel?
               .resultText
               .observe(on: MainScheduler.instance)
               .subscribe({ text in
                   self.textlabel.text = text.element
-              })
-              
-        // Do any additional setup after loading the view.
+              }).disposed(by: disposeBag)
+
     }
-    
-    deinit {
-        resultText?.dispose()
-    }
+  
     
     @IBAction func tapped(_ sender: Any) {
         viewModel?.updateText()
+    }
+    
+    @IBAction func newPageTapped(_ sender: Any) {
+        present(AssemblerManager.newViewcontroller, animated: true)
     }
     
 }
