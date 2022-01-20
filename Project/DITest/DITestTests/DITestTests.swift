@@ -32,5 +32,17 @@ class DITestTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_something() {
+        let vc = AssemblerManager.goViewcontroller
+        vc.loadViewIfNeeded()
+        XCTAssertEqual(vc.textLabel.text, "default")
+        vc.button.sendActions(for: UIControl.Event.touchUpInside)
+        XCTAssertEqual(vc.textLabel.text, "Oke")
+        
+    }
+    
+    
+    
 
 }

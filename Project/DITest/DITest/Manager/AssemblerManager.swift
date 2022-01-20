@@ -17,6 +17,7 @@ class AssemblerManager {
         MoreAssembly(),
         NextAssembly(),
         NewAssembly(),
+        GoAssembly(),
         //
         //
         //
@@ -30,6 +31,7 @@ class AssemblerManager {
     static let moreViewcontroller = assembler.resolver.resolve(MoreView.self)!
     static let nextViewcontroller = assembler.resolver.resolve(NextViewController.self)!
     static let newViewcontroller = assembler.resolver.resolve(NewViewController.self)!
+    static let goViewcontroller = assembler.resolver.resolve(GoViewController.self)!
 
 }
 

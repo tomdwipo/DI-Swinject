@@ -28,6 +28,10 @@
 		AAC53AA62797FE080090C2ED /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC53AA42797FE080090C2ED /* NewViewController.xib */; };
 		AAC53AA92797FE4B0090C2ED /* NewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */; };
 		AAC53AAB2797FEF90090C2ED /* NewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */; };
+		AAC53AC02799481A0090C2ED /* GoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53ABF2799481A0090C2ED /* GoAssembly.swift */; };
+		AAC53AC4279948530090C2ED /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AC2279948530090C2ED /* GoViewController.swift */; };
+		AAC53AC5279948530090C2ED /* GoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC53AC3279948530090C2ED /* GoViewController.xib */; };
+		AAC53AC8279948BE0090C2ED /* GoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AC7279948BE0090C2ED /* GoViewModel.swift */; };
 		AAEA4D5027913D2F007DD383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */; };
 		AAEA4D5227913D2F007DD383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */; };
 		AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D5827913D31007DD383 /* Assets.xcassets */; };
@@ -85,6 +89,10 @@
 		AAC53AA42797FE080090C2ED /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
 		AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewModel.swift; sourceTree = "<group>"; };
 		AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAssembly.swift; sourceTree = "<group>"; };
+		AAC53ABF2799481A0090C2ED /* GoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAssembly.swift; sourceTree = "<group>"; };
+		AAC53AC2279948530090C2ED /* GoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
+		AAC53AC3279948530090C2ED /* GoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoViewController.xib; sourceTree = "<group>"; };
+		AAC53AC7279948BE0090C2ED /* GoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewModel.swift; sourceTree = "<group>"; };
 		AAEA4D4C27913D2F007DD383 /* DITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -326,6 +334,49 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		AAC53ABB279947D60090C2ED /* Go */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53ABD279947E90090C2ED /* MVVM+Combine */,
+				AAC53ABC279947DB0090C2ED /* Assembly */,
+			);
+			path = Go;
+			sourceTree = "<group>";
+		};
+		AAC53ABC279947DB0090C2ED /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53ABF2799481A0090C2ED /* GoAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		AAC53ABD279947E90090C2ED /* MVVM+Combine */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AC6279948AC0090C2ED /* ViewModel */,
+				AAC53AC1279948420090C2ED /* View */,
+			);
+			path = "MVVM+Combine";
+			sourceTree = "<group>";
+		};
+		AAC53AC1279948420090C2ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AC2279948530090C2ED /* GoViewController.swift */,
+				AAC53AC3279948530090C2ED /* GoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAC53AC6279948AC0090C2ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AAC53AC7279948BE0090C2ED /* GoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AAEA4D4327913D2F007DD383 = {
 			isa = PBXGroup;
 			children = (
@@ -438,11 +489,12 @@
 		AAF354702791A2C60052EF08 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AAC53ABB279947D60090C2ED /* Go */,
 				AAC53A9F2797FDCE0090C2ED /* New */,
 				AA479C2A2796EA0D00F77211 /* Next */,
 				AA479C142796E4AD00F77211 /* More */,
-				AAF3546D2791A1A00052EF08 /* Main */,
 				AAF3546B2791A1700052EF08 /* Home */,
+				AAF3546D2791A1A00052EF08 /* Main */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -546,6 +598,7 @@
 				AAF354682791A0730052EF08 /* HomeViewController.xib in Resources */,
 				AA479C2E2796EA1D00F77211 /* NextViewController.xib in Resources */,
 				AAEA4D972791511D007DD383 /* ViewController.xib in Resources */,
+				AAC53AC5279948530090C2ED /* GoViewController.xib in Resources */,
 				AAEA4D992791518A007DD383 /* Main.storyboard in Resources */,
 				AAC53AA62797FE080090C2ED /* NewViewController.xib in Resources */,
 			);
@@ -576,10 +629,13 @@
 				AAEA4D5227913D2F007DD383 /* SceneDelegate.swift in Sources */,
 				AA479C1D2796E52800F77211 /* MoreViewController.swift in Sources */,
 				AA479C362797051B00F77211 /* NextViewModel.swift in Sources */,
+				AAC53AC4279948530090C2ED /* GoViewController.swift in Sources */,
 				AA479C292796E7D900F77211 /* MoreAssembly.swift in Sources */,
 				AAC53AA92797FE4B0090C2ED /* NewViewModel.swift in Sources */,
+				AAC53AC8279948BE0090C2ED /* GoViewModel.swift in Sources */,
 				AAF354672791A0730052EF08 /* HomeViewController.swift in Sources */,
 				AA479C262796E58000F77211 /* MoreRouter.swift in Sources */,
+				AAC53AC02799481A0090C2ED /* GoAssembly.swift in Sources */,
 				AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */,
 				AA479C242796E56B00F77211 /* MoreEntity.swift in Sources */,
 				AAC53AA52797FE080090C2ED /* NewViewController.swift in Sources */,
@@ -749,7 +805,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -777,7 +833,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
