@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 class GoViewController: UIViewController {
 
@@ -19,14 +20,28 @@ class GoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        subscription = [
-            viewModel.$resultText.assign(to: \.text!, on: textLabel)
-        ]
+//        subscription = [
+//            viewModel.$resultText.assign(to: \.text!, on: textLabel)
+//        ]
+        
+        viewModel.$resultText.compactMap({ string in
+            if string == "default" {
+                return "yoi"
+            }
+            return string
+        }).sink { data in
+            self.textLabel.text = data
+        }
+        .store(in: &subscription)
         
         // Do any additional setup after loading the view.
     }
 
     @IBAction func tapped(_ sender: Any) {
         viewModel?.changeData()
+    }
+    
+    @IBAction func awayPageTapped(_ sender: Any) {
+        present(AssemblerManager.awayViewcontroller, animated: true)
     }
 }

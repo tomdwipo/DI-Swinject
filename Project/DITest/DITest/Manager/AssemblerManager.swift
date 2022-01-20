@@ -8,6 +8,7 @@
 import Foundation
 import Swinject
 import Module_login
+import SwiftUI
 class AssemblerManager {
  
     static let assembler = Assembler([
@@ -18,6 +19,7 @@ class AssemblerManager {
         NextAssembly(),
         NewAssembly(),
         GoAssembly(),
+        AwayAssembly(),
         //
         //
         //
@@ -32,6 +34,7 @@ class AssemblerManager {
     static let nextViewcontroller = assembler.resolver.resolve(NextViewController.self)!
     static let newViewcontroller = assembler.resolver.resolve(NewViewController.self)!
     static let goViewcontroller = assembler.resolver.resolve(GoViewController.self)!
+    static let awayViewcontroller = assembler.resolver.resolve(UIHostingController<AwayView>.self)!
 
 }
 

@@ -35,6 +35,14 @@
                         <action selector="tapped:" destination="-1" eventType="touchUpInside" id="s0J-ZV-evE"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-ER-aq2">
+                    <rect key="frame" x="20" y="156" width="374" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="awayPageTapped:" destination="-1" eventType="touchUpInside" id="toT-SY-MnF"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,9 +52,12 @@
                 <constraint firstItem="QfN-nu-OXC" firstAttribute="top" secondItem="k2X-6q-aGG" secondAttribute="bottom" constant="20" id="FZE-px-Ujk"/>
                 <constraint firstItem="k2X-6q-aGG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="LG1-j7-K0A"/>
                 <constraint firstItem="QfN-nu-OXC" firstAttribute="top" secondItem="k2X-6q-aGG" secondAttribute="bottom" constant="20" id="RD6-rZ-FX1"/>
+                <constraint firstItem="PBu-ER-aq2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="b6I-p3-4NW"/>
                 <constraint firstItem="QfN-nu-OXC" firstAttribute="top" secondItem="k2X-6q-aGG" secondAttribute="bottom" constant="20" id="d2u-f4-7qH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k2X-6q-aGG" secondAttribute="trailing" constant="20" id="o74-6f-Blq"/>
                 <constraint firstItem="QfN-nu-OXC" firstAttribute="top" secondItem="k2X-6q-aGG" secondAttribute="bottom" constant="20" id="q2z-Iy-XaL"/>
+                <constraint firstItem="PBu-ER-aq2" firstAttribute="top" secondItem="QfN-nu-OXC" secondAttribute="bottom" constant="20" id="qN8-fK-x5X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PBu-ER-aq2" secondAttribute="trailing" constant="20" id="uuu-Ji-Wqv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QfN-nu-OXC" secondAttribute="trailing" constant="20" id="wbp-es-gvx"/>
             </constraints>
             <point key="canvasLocation" x="139" y="100"/>
