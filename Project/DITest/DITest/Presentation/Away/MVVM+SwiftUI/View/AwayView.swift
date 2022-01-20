@@ -11,14 +11,16 @@ struct AwayView: View {
     @ObservedObject var viewModel: AwayViewModel = AwayViewModel()
     
     var body: some View {
-        Text(viewModel.resultText)
-            .padding(SwiftUI.Edge.Set.bottom, 20)
-        Button {
-            viewModel.changeText()
-        } label: {
-            Text("test")
+        VStack {
+            Text(viewModel.resultText)
+                .padding(20)
+            Button {
+                viewModel.changeText()
+            } label: {
+                Text("Button")
+            }
+            Spacer()
         }
-
     }
 }
 

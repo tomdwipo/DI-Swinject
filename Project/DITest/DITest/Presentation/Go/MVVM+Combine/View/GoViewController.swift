@@ -26,7 +26,7 @@ class GoViewController: UIViewController {
         
         viewModel.$resultText.compactMap({ string in
             if string == "default" {
-                return "yoi"
+                return "default"
             }
             return string
         }).sink { data in
