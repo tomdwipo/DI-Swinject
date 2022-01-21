@@ -7,6 +7,7 @@
 
 import Foundation
 import Module_login
+import SwiftUI
 
 class AwayViewModel: ObservableObject {
     @Published var resultText = "default"
