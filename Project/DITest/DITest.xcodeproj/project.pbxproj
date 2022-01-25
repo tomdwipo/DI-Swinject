@@ -21,9 +21,9 @@
 		AA479C3C2797F96300F77211 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AA479C3B2797F96300F77211 /* Swinject */; };
 		AA5EAF0927A07AB9007A31BD /* Helpers in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0827A07AB9007A31BD /* Helpers */; };
 		AA5EAF0B27A07C84007A31BD /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0A27A07C84007A31BD /* Router */; };
-		AA5EAF0D27A07D24007A31BD /* Away in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0C27A07D24007A31BD /* Away */; };
 		AA5EAF1027A07F7C007A31BD /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF0F27A07F7C007A31BD /* Wireframe.swift */; };
 		AA5EAF1327A07FC7007A31BD /* WireframeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */; };
+		AA5EAF1827A08725007A31BD /* PresentationAway in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1727A08725007A31BD /* PresentationAway */; };
 		AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CA627957261001DD1F5 /* ViewModel.swift */; };
 		AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CB327958E89001DD1F5 /* HomePresenter.swift */; };
 		AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A992797FD010090C2ED /* RxCocoa */; };
@@ -90,6 +90,7 @@
 		AA479C38279707B700F77211 /* NextAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAssembly.swift; sourceTree = "<group>"; };
 		AA5EAF0F27A07F7C007A31BD /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeAssembly.swift; sourceTree = "<group>"; };
+		AA5EAF1427A08578007A31BD /* MyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyModule; path = "../DITest-module/MyModule"; sourceTree = "<group>"; };
 		AA683CA627957261001DD1F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AA683CB327958E89001DD1F5 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		AAC53AA32797FE080090C2ED /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		AAEA4D5D27913D31007DD383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAEA4D6227913D32007DD383 /* DITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA4D6627913D32007DD383 /* DITestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DITestTests.swift; sourceTree = "<group>"; };
-		AAEA4D8527914812007DD383 /* Module-login */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Module-login"; path = "../DITest-module/Module-login"; sourceTree = "<group>"; };
 		AAEA4D8D27914A94007DD383 /* AssemblerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblerManager.swift; sourceTree = "<group>"; };
 		AAEA4D942791511D007DD383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAEA4D952791511D007DD383 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 				AAEA4D8C279149BA007DD383 /* Module-login in Frameworks */,
 				AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */,
 				AAC53A9C2797FD010090C2ED /* RxRelay in Frameworks */,
-				AA5EAF0D27A07D24007A31BD /* Away in Frameworks */,
+				AA5EAF1827A08725007A31BD /* PresentationAway in Frameworks */,
 				AA479C3C2797F96300F77211 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,8 +427,8 @@
 		AAEA4D4E27913D2F007DD383 /* DITest */ = {
 			isa = PBXGroup;
 			children = (
-				AA5EAF0E27A07F6D007A31BD /* Wireframe */,
 				AAF354702791A2C60052EF08 /* Presentation */,
+				AA5EAF0E27A07F6D007A31BD /* Wireframe */,
 				AAEA4D9A279152C1007DD383 /* Manager */,
 				AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */,
 				AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */,
@@ -451,7 +451,7 @@
 		AAEA4D8427914812007DD383 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				AAEA4D8527914812007DD383 /* Module-login */,
+				AA5EAF1427A08578007A31BD /* MyModule */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -552,7 +552,7 @@
 				AAC53A9D2797FD010090C2ED /* RxSwift */,
 				AA5EAF0827A07AB9007A31BD /* Helpers */,
 				AA5EAF0A27A07C84007A31BD /* Router */,
-				AA5EAF0C27A07D24007A31BD /* Away */,
+				AA5EAF1727A08725007A31BD /* PresentationAway */,
 			);
 			productName = DITest;
 			productReference = AAEA4D4C27913D2F007DD383 /* DITest.app */;
@@ -983,9 +983,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Router;
 		};
-		AA5EAF0C27A07D24007A31BD /* Away */ = {
+		AA5EAF1727A08725007A31BD /* PresentationAway */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Away;
+			productName = PresentationAway;
 		};
 		AAC53A992797FD010090C2ED /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;

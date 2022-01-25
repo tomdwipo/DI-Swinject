@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Module-login",
+    name: "MyModule",
     platforms: [
         .iOS(.v12)
     ],
@@ -16,8 +16,8 @@ let package = Package(
             targets: ["Module-login"]),
         
         .library(
-            name: "Away",
-            targets: ["Away"]),
+            name: "PresentationAway",
+            targets: ["PresentationAway"]),
         .library(
             name: "Helpers",
             targets: ["Helpers"]),
@@ -44,11 +44,11 @@ let package = Package(
             dependencies: ["Module-login"]),
        
         .target(
-            name: "Away",
+            name: "PresentationAway",
             dependencies: ["Swinject", "Module-login", "Helpers", "Router"]),
         .testTarget(
-            name: "AwayTests",
-            dependencies: ["Away"]),
+            name: "PresentationAwayTests",
+            dependencies: ["PresentationAway"]),
         .target(
             name: "Helpers",
             dependencies: []),

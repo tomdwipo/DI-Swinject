@@ -9,7 +9,7 @@ import Foundation
 import Swinject
 import Module_login
 import SwiftUI
-import Away
+import PresentationAway
 
 class AssemblerManager {
  
