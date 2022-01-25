@@ -6,10 +6,18 @@
 //
 
 import SwiftUI
-
-struct AwayView: View {
-    @ObservedObject var viewModel: AwayViewModel = AwayViewModel()
-    var body: some View {
+import Router
+import Helpers
+@available(iOS 13.0, *)
+public struct AwayView: View {
+    @ObservedObject public var viewModel: AwayViewModel = AwayViewModel()
+    public var router: RouterProtocol?
+    
+    public init() {
+        
+    }
+    
+    public var body: some View {
         List(0 ..< 10) { item in
             HStack{
                 VStack(alignment: HorizontalAlignment.leading) {
@@ -21,7 +29,8 @@ struct AwayView: View {
                         Text("Button")
                     }
                     Button {
-                        self.presentTo(page: AssemblerManager.moreViewcontroller)
+//                        self.presentTo(page: AssemblerManager.moreViewcontroller)
+                        self.presentTo(page: router?.navigateToMorePage())
                     } label: {
                         Text("To More View Controller")
                     }
@@ -33,7 +42,7 @@ struct AwayView: View {
 }
 
 
-
+@available(iOS 13.0, *)
 struct AwayView_Previews: PreviewProvider {
     static var previews: some View {
         AwayView()

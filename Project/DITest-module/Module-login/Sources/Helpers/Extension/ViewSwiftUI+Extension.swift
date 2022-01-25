@@ -8,8 +8,10 @@
 import Foundation
 import SwiftUI
 
-extension View {
-    func presentTo<T: UIViewController>(page: T) {
+@available(iOS 13.0, *)
+public extension View {
+    func presentTo<T: UIViewController>(page: T?) {
+        guard let page = page else { return }
         presentViewController()?.present(page, animated: true)
     }
     
@@ -17,7 +19,8 @@ extension View {
         presentViewController()?.dismiss(animated: true)
     }
     
-    func pushViewTo<T: UIViewController>(page: T) {
+    func pushViewTo<T: UIViewController>(page: T?) {
+        guard let page = page else { return }
         presentViewController()?.navigationController?.pushViewController(page, animated: true)
     }
     

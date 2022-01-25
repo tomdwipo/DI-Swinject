@@ -14,9 +14,16 @@ let package = Package(
         .library(
             name: "Module-login",
             targets: ["Module-login"]),
+        
         .library(
-            name: "Testing",
-            targets: ["Testing"]),
+            name: "Away",
+            targets: ["Away"]),
+        .library(
+            name: "Helpers",
+            targets: ["Helpers"]),
+        .library(
+            name: "Router",
+            targets: ["Router"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Swinject/Swinject.git", from: "2.8.0")
@@ -32,14 +39,27 @@ let package = Package(
             dependencies: [
                 .product(name: "Swinject", package: "Swinject")
             ]),
-        .target(
-            name: "Testing",
-            dependencies: []),
         .testTarget(
             name: "Module-loginTests",
             dependencies: ["Module-login"]),
+       
+        .target(
+            name: "Away",
+            dependencies: ["Swinject", "Module-login", "Helpers", "Router"]),
         .testTarget(
-            name: "TestingTests",
-            dependencies: ["Testing"]),
+            name: "AwayTests",
+            dependencies: ["Away"]),
+        .target(
+            name: "Helpers",
+            dependencies: []),
+        .testTarget(
+            name: "HelpersTests",
+            dependencies: ["Helpers"]),
+        .target(
+            name: "Router",
+            dependencies: []),
+        .testTarget(
+            name: "RouterTests",
+            dependencies: ["Router"]),
     ]
 )

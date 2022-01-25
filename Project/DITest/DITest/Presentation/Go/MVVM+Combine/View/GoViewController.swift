@@ -8,11 +8,14 @@
 import UIKit
 import Combine
 import SwiftUI
+import Router
 
 class GoViewController: UIViewController {
 
     @IBOutlet weak var textLabel: UILabel!
     var viewModel: GoViewModel!
+    
+    var router: RouterProtocol!
     
     @IBOutlet weak var button: UIButton!
     private var subscription = Set<AnyCancellable>()
@@ -42,6 +45,7 @@ class GoViewController: UIViewController {
     }
     
     @IBAction func awayPageTapped(_ sender: Any) {
-        present(AssemblerManager.awayViewcontroller, animated: true)
+        
+        present(router.navigateToAwayPage(), animated: true)
     }
 }

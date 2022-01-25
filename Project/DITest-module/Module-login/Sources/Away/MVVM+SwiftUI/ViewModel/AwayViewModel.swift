@@ -9,7 +9,8 @@ import Foundation
 import Module_login
 import SwiftUI
 
-class AwayViewModel: ObservableObject {
+@available(iOS 13.0, *)
+public class AwayViewModel: ObservableObject {
     @Published var resultText = "default"
     var isChangeData = false
     var usecase: GetMessageUseCase!
