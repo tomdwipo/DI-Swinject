@@ -10,6 +10,7 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
+        // point : - fast to test, - fast to compile, - easy to maintain
         .library(
             name: "Module-login",
             targets: ["Module-login"]),
