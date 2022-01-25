@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "Module-login",
             targets: ["Module-login"]),
+        .library(
+            name: "Testing",
+            targets: ["Testing"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Swinject/Swinject.git", from: "2.8.0")
@@ -25,9 +28,17 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Module-login",
-            dependencies: ["Swinject"]),
+            dependencies: [
+                .product(name: "Swinject", package: "Swinject")
+            ]),
+        .target(
+            name: "Testing",
+            dependencies: []),
         .testTarget(
             name: "Module-loginTests",
             dependencies: ["Module-login"]),
+        .testTarget(
+            name: "TestingTests",
+            dependencies: ["Testing"]),
     ]
 )
