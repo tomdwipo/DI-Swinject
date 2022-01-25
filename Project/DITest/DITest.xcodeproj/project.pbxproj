@@ -24,6 +24,7 @@
 		AA5EAF1027A07F7C007A31BD /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF0F27A07F7C007A31BD /* Wireframe.swift */; };
 		AA5EAF1327A07FC7007A31BD /* WireframeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */; };
 		AA5EAF1827A08725007A31BD /* PresentationAway in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1727A08725007A31BD /* PresentationAway */; };
+		AA5EAF1A27A08888007A31BD /* Module-login in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1927A08888007A31BD /* Module-login */; };
 		AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CA627957261001DD1F5 /* ViewModel.swift */; };
 		AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CB327958E89001DD1F5 /* HomePresenter.swift */; };
 		AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A992797FD010090C2ED /* RxCocoa */; };
@@ -42,7 +43,6 @@
 		AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D5827913D31007DD383 /* Assets.xcassets */; };
 		AAEA4D5C27913D31007DD383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D5A27913D31007DD383 /* LaunchScreen.storyboard */; };
 		AAEA4D6727913D32007DD383 /* DITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D6627913D32007DD383 /* DITestTests.swift */; };
-		AAEA4D8C279149BA007DD383 /* Module-login in Frameworks */ = {isa = PBXBuildFile; productRef = AAEA4D8B279149BA007DD383 /* Module-login */; };
 		AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D8D27914A94007DD383 /* AssemblerManager.swift */; };
 		AAEA4D962791511D007DD383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D942791511D007DD383 /* ViewController.swift */; };
 		AAEA4D972791511D007DD383 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D952791511D007DD383 /* ViewController.xib */; };
@@ -124,10 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5EAF1A27A08888007A31BD /* Module-login in Frameworks */,
 				AA5EAF0B27A07C84007A31BD /* Router in Frameworks */,
 				AA5EAF0927A07AB9007A31BD /* Helpers in Frameworks */,
 				AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */,
-				AAEA4D8C279149BA007DD383 /* Module-login in Frameworks */,
 				AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */,
 				AAC53A9C2797FD010090C2ED /* RxRelay in Frameworks */,
 				AA5EAF1827A08725007A31BD /* PresentationAway in Frameworks */,
@@ -545,7 +545,6 @@
 			);
 			name = DITest;
 			packageProductDependencies = (
-				AAEA4D8B279149BA007DD383 /* Module-login */,
 				AA479C3B2797F96300F77211 /* Swinject */,
 				AAC53A992797FD010090C2ED /* RxCocoa */,
 				AAC53A9B2797FD010090C2ED /* RxRelay */,
@@ -553,6 +552,7 @@
 				AA5EAF0827A07AB9007A31BD /* Helpers */,
 				AA5EAF0A27A07C84007A31BD /* Router */,
 				AA5EAF1727A08725007A31BD /* PresentationAway */,
+				AA5EAF1927A08888007A31BD /* Module-login */,
 			);
 			productName = DITest;
 			productReference = AAEA4D4C27913D2F007DD383 /* DITest.app */;
@@ -987,6 +987,10 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = PresentationAway;
 		};
+		AA5EAF1927A08888007A31BD /* Module-login */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Module-login";
+		};
 		AAC53A992797FD010090C2ED /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
@@ -1001,10 +1005,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		AAEA4D8B279149BA007DD383 /* Module-login */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = "Module-login";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
