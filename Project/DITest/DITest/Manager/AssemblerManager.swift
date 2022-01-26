@@ -10,6 +10,9 @@ import Swinject
 import Module_login
 import SwiftUI
 import PresentationAway
+import PresentationGo
+import PresentationNew
+import PresentationNext
 
 class AssemblerManager {
  
@@ -18,11 +21,12 @@ class AssemblerManager {
         ModuleLoginAssembly(),
         HomeAssembly(),
         MoreAssembly(),
-        NextAssembly(),
-        NewAssembly(),
-        GoAssembly(),
         WireframeAssembly(),
         AwayAssembly(),
+        GoAssembly(),
+        NewAssembly(),
+        NextAssembly()
+
         //
         //
         //

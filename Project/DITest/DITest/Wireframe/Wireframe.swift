@@ -10,6 +10,14 @@ import Router
 import UIKit
 
 class Wireframe: RouterProtocol {
+    func navigateToNextPage() -> UIViewController {
+        return AssemblerManager.nextViewcontroller
+    }
+    
+    func navigateToNewPage() -> UIViewController {
+        return AssemblerManager.newViewcontroller
+    }
+    
     func navigateToAwayPage() -> UIViewController {
         return AssemblerManager.awayViewcontroller
     }

@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class NewViewController: UIViewController {
+public class NewViewController: UIViewController {
 
     @IBOutlet weak var textLabel: UILabel!
   
@@ -17,7 +17,7 @@ class NewViewController: UIViewController {
     
     let dispose = DisposeBag()
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         viewModel?
             .resultText

@@ -11,4 +11,6 @@ import UIKit
 public protocol RouterProtocol {
     func navigateToMorePage() -> UIViewController
     func navigateToAwayPage() -> UIViewController
+    func navigateToNewPage() -> UIViewController
+    func navigateToNextPage() -> UIViewController
 }

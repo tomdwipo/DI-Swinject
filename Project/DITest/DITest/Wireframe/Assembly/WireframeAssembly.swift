@@ -16,13 +16,5 @@ class WireframeAssembly: Assembly {
         container.register(RouterProtocol.self) { _ in
             Wireframe()
         }
-        
-        container.register(UIHostingController<AwayView>.self) { r in
-            var view = AwayView()
-            view.router = r.resolve(RouterProtocol.self)!
-            view.viewModel = r.resolve(AwayViewModel.self)!
-            let resolver = UIHostingController(rootView: view)
-            return resolver
-        }
     }
 }

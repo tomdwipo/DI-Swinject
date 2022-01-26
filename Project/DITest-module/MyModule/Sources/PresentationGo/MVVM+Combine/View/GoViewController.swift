@@ -10,18 +10,19 @@ import Combine
 import SwiftUI
 import Router
 
-class GoViewController: UIViewController {
+@available(iOS 13.0, *)
+public class GoViewController: UIViewController {
 
     @IBOutlet weak var textLabel: UILabel!
-    var viewModel: GoViewModel!
+    public var viewModel: GoViewModel!
     
-    var router: RouterProtocol!
+   public var router: RouterProtocol!
     
     @IBOutlet weak var button: UIButton!
     private var subscription = Set<AnyCancellable>()
     
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 //        subscription = [
 //            viewModel.$resultText.assign(to: \.text!, on: textLabel)

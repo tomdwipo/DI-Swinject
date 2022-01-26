@@ -9,8 +9,14 @@ import Foundation
 import Swinject
 import Module_login
 import Router
-class GoAssembly: Assembly {
-    func assemble(container: Container) {
+
+@available(iOS 13.0, *)
+public class GoAssembly: Assembly {
+    public init() {
+        
+    }
+    
+    public func assemble(container: Container) {
         container.register(GoViewModel.self) { r in
             let resolver = GoViewModel()
             resolver.usecase = r.resolve(GetMessageUseCase.self)!
@@ -18,7 +24,7 @@ class GoAssembly: Assembly {
         }
         
         container.register(GoViewController.self) { r in
-            let resolver = GoViewController()
+            let resolver = GoViewController(nibName: String(describing: GoViewController.self), bundle: Bundle.module.self)
             resolver.router = r.resolve(RouterProtocol.self)!
             resolver.viewModel = r.resolve(GoViewModel.self)!
             return resolver

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import Module_login
 
-class GoViewModel {
+public class GoViewModel {
     @Published private(set) var resultText = "default"
     
     var usecase: GetMessageUseCase?

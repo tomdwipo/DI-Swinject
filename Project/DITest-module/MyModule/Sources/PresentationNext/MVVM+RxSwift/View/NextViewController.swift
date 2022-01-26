@@ -7,15 +7,16 @@
 
 import UIKit
 import RxSwift
+import Router
 
-class NextViewController: UIViewController {
+public class NextViewController: UIViewController {
 
     @IBOutlet weak var textlabel: UILabel!
     var viewModel: NextViewModel?
     let disposeBag = DisposeBag()
-   
+    var router: RouterProtocol!
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         viewModel?
               .resultText
@@ -32,7 +33,8 @@ class NextViewController: UIViewController {
     }
     
     @IBAction func newPageTapped(_ sender: Any) {
-        present(AssemblerManager.newViewcontroller, animated: true)
+        
+        present(router.navigateToNewPage(), animated: true)
     }
     
 }

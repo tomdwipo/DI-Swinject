@@ -24,9 +24,20 @@ let package = Package(
         .library(
             name: "Router",
             targets: ["Router"]),
+        .library(
+            name: "PresentationGo",
+            targets: ["PresentationGo"]),
+        .library(
+            name: "PresentationNew",
+            targets: ["PresentationNew"]),
+        .library(
+            name: "PresentationNext",
+            targets: ["PresentationNext"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Swinject/Swinject.git", from: "2.8.0")
+        .package(url: "https://github.com/Swinject/Swinject.git", from: "2.8.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.5.0"))
+
 
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
@@ -49,6 +60,31 @@ let package = Package(
         .testTarget(
             name: "PresentationAwayTests",
             dependencies: ["PresentationAway"]),
+        .target(
+            name: "PresentationGo",
+            dependencies: ["Swinject", "Module-login", "Helpers", "Router"]),
+        .testTarget(
+            name: "PresentationGoTests",
+            dependencies: ["PresentationGo"]),
+        .target(
+            name: "PresentationNew",
+            dependencies: ["Swinject", "Module-login", "Helpers", "Router",
+                           .product(name: "RxSwift", package: "RxSwift"),
+                           .product(name: "RxCocoa", package: "RxSwift")
+
+                          ]),
+        .testTarget(
+            name: "PresentationNewTests",
+            dependencies: ["PresentationNew"]),
+        .target(
+            name: "PresentationNext",
+            dependencies: ["Swinject", "Module-login", "Helpers", "Router",
+                           .product(name: "RxSwift", package: "RxSwift")
+
+                          ]),
+        .testTarget(
+            name: "PresentationNextTests",
+            dependencies: ["PresentationNext"]),
         .target(
             name: "Helpers",
             dependencies: []),

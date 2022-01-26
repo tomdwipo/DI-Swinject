@@ -14,10 +14,6 @@
 		AA479C242796E56B00F77211 /* MoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C232796E56B00F77211 /* MoreEntity.swift */; };
 		AA479C262796E58000F77211 /* MoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C252796E58000F77211 /* MoreRouter.swift */; };
 		AA479C292796E7D900F77211 /* MoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C282796E7D900F77211 /* MoreAssembly.swift */; };
-		AA479C2D2796EA1D00F77211 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C2B2796EA1D00F77211 /* NextViewController.swift */; };
-		AA479C2E2796EA1D00F77211 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA479C2C2796EA1D00F77211 /* NextViewController.xib */; };
-		AA479C362797051B00F77211 /* NextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C352797051B00F77211 /* NextViewModel.swift */; };
-		AA479C39279707B700F77211 /* NextAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C38279707B700F77211 /* NextAssembly.swift */; };
 		AA479C3C2797F96300F77211 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AA479C3B2797F96300F77211 /* Swinject */; };
 		AA5EAF0927A07AB9007A31BD /* Helpers in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0827A07AB9007A31BD /* Helpers */; };
 		AA5EAF0B27A07C84007A31BD /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0A27A07C84007A31BD /* Router */; };
@@ -25,19 +21,14 @@
 		AA5EAF1327A07FC7007A31BD /* WireframeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */; };
 		AA5EAF1827A08725007A31BD /* PresentationAway in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1727A08725007A31BD /* PresentationAway */; };
 		AA5EAF1A27A08888007A31BD /* Module-login in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1927A08888007A31BD /* Module-login */; };
+		AA5EAF1C27A1328C007A31BD /* PresentationGo in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1B27A1328C007A31BD /* PresentationGo */; };
+		AA5EAF1E27A1360E007A31BD /* PresentationNew in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1D27A1360E007A31BD /* PresentationNew */; };
+		AA5EAF2027A137A5007A31BD /* PresentationNext in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1F27A137A5007A31BD /* PresentationNext */; };
 		AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CA627957261001DD1F5 /* ViewModel.swift */; };
 		AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CB327958E89001DD1F5 /* HomePresenter.swift */; };
 		AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A992797FD010090C2ED /* RxCocoa */; };
 		AAC53A9C2797FD010090C2ED /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A9B2797FD010090C2ED /* RxRelay */; };
 		AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A9D2797FD010090C2ED /* RxSwift */; };
-		AAC53AA52797FE080090C2ED /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AA32797FE080090C2ED /* NewViewController.swift */; };
-		AAC53AA62797FE080090C2ED /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC53AA42797FE080090C2ED /* NewViewController.xib */; };
-		AAC53AA92797FE4B0090C2ED /* NewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */; };
-		AAC53AAB2797FEF90090C2ED /* NewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */; };
-		AAC53AC02799481A0090C2ED /* GoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53ABF2799481A0090C2ED /* GoAssembly.swift */; };
-		AAC53AC4279948530090C2ED /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AC2279948530090C2ED /* GoViewController.swift */; };
-		AAC53AC5279948530090C2ED /* GoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC53AC3279948530090C2ED /* GoViewController.xib */; };
-		AAC53AC8279948BE0090C2ED /* GoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC53AC7279948BE0090C2ED /* GoViewModel.swift */; };
 		AAEA4D5027913D2F007DD383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */; };
 		AAEA4D5227913D2F007DD383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */; };
 		AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D5827913D31007DD383 /* Assets.xcassets */; };
@@ -84,23 +75,11 @@
 		AA479C232796E56B00F77211 /* MoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreEntity.swift; sourceTree = "<group>"; };
 		AA479C252796E58000F77211 /* MoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreRouter.swift; sourceTree = "<group>"; };
 		AA479C282796E7D900F77211 /* MoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAssembly.swift; sourceTree = "<group>"; };
-		AA479C2B2796EA1D00F77211 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
-		AA479C2C2796EA1D00F77211 /* NextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
-		AA479C352797051B00F77211 /* NextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewModel.swift; sourceTree = "<group>"; };
-		AA479C38279707B700F77211 /* NextAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAssembly.swift; sourceTree = "<group>"; };
 		AA5EAF0F27A07F7C007A31BD /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeAssembly.swift; sourceTree = "<group>"; };
 		AA5EAF1427A08578007A31BD /* MyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyModule; path = "../DITest-module/MyModule"; sourceTree = "<group>"; };
 		AA683CA627957261001DD1F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AA683CB327958E89001DD1F5 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		AAC53AA32797FE080090C2ED /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
-		AAC53AA42797FE080090C2ED /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
-		AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewModel.swift; sourceTree = "<group>"; };
-		AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAssembly.swift; sourceTree = "<group>"; };
-		AAC53ABF2799481A0090C2ED /* GoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAssembly.swift; sourceTree = "<group>"; };
-		AAC53AC2279948530090C2ED /* GoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
-		AAC53AC3279948530090C2ED /* GoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoViewController.xib; sourceTree = "<group>"; };
-		AAC53AC7279948BE0090C2ED /* GoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewModel.swift; sourceTree = "<group>"; };
 		AAEA4D4C27913D2F007DD383 /* DITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,8 +103,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5EAF1C27A1328C007A31BD /* PresentationGo in Frameworks */,
 				AA5EAF1A27A08888007A31BD /* Module-login in Frameworks */,
+				AA5EAF2027A137A5007A31BD /* PresentationNext in Frameworks */,
 				AA5EAF0B27A07C84007A31BD /* Router in Frameworks */,
+				AA5EAF1E27A1360E007A31BD /* PresentationNew in Frameworks */,
 				AA5EAF0927A07AB9007A31BD /* Helpers in Frameworks */,
 				AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */,
 				AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */,
@@ -215,49 +197,6 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		AA479C2A2796EA0D00F77211 /* Next */ = {
-			isa = PBXGroup;
-			children = (
-				AA479C37279707A500F77211 /* Assembly */,
-				AA479C32279704EF00F77211 /* MVVM+RxSwift */,
-			);
-			path = Next;
-			sourceTree = "<group>";
-		};
-		AA479C32279704EF00F77211 /* MVVM+RxSwift */ = {
-			isa = PBXGroup;
-			children = (
-				AA479C342797050700F77211 /* ViewModel */,
-				AA479C33279704FC00F77211 /* View */,
-			);
-			path = "MVVM+RxSwift";
-			sourceTree = "<group>";
-		};
-		AA479C33279704FC00F77211 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AA479C2C2796EA1D00F77211 /* NextViewController.xib */,
-				AA479C2B2796EA1D00F77211 /* NextViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		AA479C342797050700F77211 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AA479C352797051B00F77211 /* NextViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		AA479C37279707A500F77211 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				AA479C38279707B700F77211 /* NextAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
 		AA5EAF0E27A07F6D007A31BD /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,92 +255,6 @@
 				AA683CB227958E6C001DD1F5 /* Presenter */,
 			);
 			path = MVP;
-			sourceTree = "<group>";
-		};
-		AAC53A9F2797FDCE0090C2ED /* New */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AA12797FDE60090C2ED /* Assembly */,
-				AAC53AA02797FDD40090C2ED /* MVVM+RxSwift+RxCocoa */,
-			);
-			path = New;
-			sourceTree = "<group>";
-		};
-		AAC53AA02797FDD40090C2ED /* MVVM+RxSwift+RxCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AA72797FE380090C2ED /* ViewModel */,
-				AAC53AA22797FDF00090C2ED /* View */,
-			);
-			path = "MVVM+RxSwift+RxCocoa";
-			sourceTree = "<group>";
-		};
-		AAC53AA12797FDE60090C2ED /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AAA2797FEF90090C2ED /* NewAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		AAC53AA22797FDF00090C2ED /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AA32797FE080090C2ED /* NewViewController.swift */,
-				AAC53AA42797FE080090C2ED /* NewViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		AAC53AA72797FE380090C2ED /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AA82797FE4B0090C2ED /* NewViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		AAC53ABB279947D60090C2ED /* Go */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53ABD279947E90090C2ED /* MVVM+Combine */,
-				AAC53ABC279947DB0090C2ED /* Assembly */,
-			);
-			path = Go;
-			sourceTree = "<group>";
-		};
-		AAC53ABC279947DB0090C2ED /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53ABF2799481A0090C2ED /* GoAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		AAC53ABD279947E90090C2ED /* MVVM+Combine */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AC6279948AC0090C2ED /* ViewModel */,
-				AAC53AC1279948420090C2ED /* View */,
-			);
-			path = "MVVM+Combine";
-			sourceTree = "<group>";
-		};
-		AAC53AC1279948420090C2ED /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AC2279948530090C2ED /* GoViewController.swift */,
-				AAC53AC3279948530090C2ED /* GoViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		AAC53AC6279948AC0090C2ED /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AAC53AC7279948BE0090C2ED /* GoViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AAEA4D4327913D2F007DD383 = {
@@ -517,9 +370,6 @@
 		AAF354702791A2C60052EF08 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				AAC53ABB279947D60090C2ED /* Go */,
-				AAC53A9F2797FDCE0090C2ED /* New */,
-				AA479C2A2796EA0D00F77211 /* Next */,
 				AA479C142796E4AD00F77211 /* More */,
 				AAF3546B2791A1700052EF08 /* Home */,
 				AAF3546D2791A1A00052EF08 /* Main */,
@@ -553,6 +403,9 @@
 				AA5EAF0A27A07C84007A31BD /* Router */,
 				AA5EAF1727A08725007A31BD /* PresentationAway */,
 				AA5EAF1927A08888007A31BD /* Module-login */,
+				AA5EAF1B27A1328C007A31BD /* PresentationGo */,
+				AA5EAF1D27A1360E007A31BD /* PresentationNew */,
+				AA5EAF1F27A137A5007A31BD /* PresentationNext */,
 			);
 			productName = DITest;
 			productReference = AAEA4D4C27913D2F007DD383 /* DITest.app */;
@@ -627,11 +480,8 @@
 				AA479C1E2796E52800F77211 /* MoreViewController.xib in Resources */,
 				AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */,
 				AAF354682791A0730052EF08 /* HomeViewController.xib in Resources */,
-				AA479C2E2796EA1D00F77211 /* NextViewController.xib in Resources */,
 				AAEA4D972791511D007DD383 /* ViewController.xib in Resources */,
-				AAC53AC5279948530090C2ED /* GoViewController.xib in Resources */,
 				AAEA4D992791518A007DD383 /* Main.storyboard in Resources */,
-				AAC53AA62797FE080090C2ED /* NewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,8 +501,6 @@
 			files = (
 				AA5EAF1327A07FC7007A31BD /* WireframeAssembly.swift in Sources */,
 				AAEA4D9C279152D0007DD383 /* MainAssembly.swift in Sources */,
-				AAC53AAB2797FEF90090C2ED /* NewAssembly.swift in Sources */,
-				AA479C2D2796EA1D00F77211 /* NextViewController.swift in Sources */,
 				AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */,
 				AAEA4D962791511D007DD383 /* ViewController.swift in Sources */,
 				AAEA4D5027913D2F007DD383 /* AppDelegate.swift in Sources */,
@@ -660,20 +508,13 @@
 				AA479C222796E55200F77211 /* MorePresenter.swift in Sources */,
 				AAEA4D5227913D2F007DD383 /* SceneDelegate.swift in Sources */,
 				AA479C1D2796E52800F77211 /* MoreViewController.swift in Sources */,
-				AA479C362797051B00F77211 /* NextViewModel.swift in Sources */,
-				AAC53AC4279948530090C2ED /* GoViewController.swift in Sources */,
 				AA479C292796E7D900F77211 /* MoreAssembly.swift in Sources */,
-				AAC53AA92797FE4B0090C2ED /* NewViewModel.swift in Sources */,
-				AAC53AC8279948BE0090C2ED /* GoViewModel.swift in Sources */,
 				AAF354672791A0730052EF08 /* HomeViewController.swift in Sources */,
 				AA479C262796E58000F77211 /* MoreRouter.swift in Sources */,
-				AAC53AC02799481A0090C2ED /* GoAssembly.swift in Sources */,
 				AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */,
 				AA479C242796E56B00F77211 /* MoreEntity.swift in Sources */,
 				AA5EAF1027A07F7C007A31BD /* Wireframe.swift in Sources */,
-				AAC53AA52797FE080090C2ED /* NewViewController.swift in Sources */,
 				AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */,
-				AA479C39279707B700F77211 /* NextAssembly.swift in Sources */,
 				AAF3546A2791A12E0052EF08 /* HomeAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -990,6 +831,18 @@
 		AA5EAF1927A08888007A31BD /* Module-login */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "Module-login";
+		};
+		AA5EAF1B27A1328C007A31BD /* PresentationGo */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PresentationGo;
+		};
+		AA5EAF1D27A1360E007A31BD /* PresentationNew */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PresentationNew;
+		};
+		AA5EAF1F27A137A5007A31BD /* PresentationNext */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PresentationNext;
 		};
 		AAC53A992797FD010090C2ED /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
