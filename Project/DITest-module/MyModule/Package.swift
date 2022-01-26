@@ -93,7 +93,7 @@ let package = Package(
             dependencies: ["Helpers"]),
         .target(
             name: "Router",
-            dependencies: []),
+            dependencies: ["Swinject"]),
         .testTarget(
             name: "RouterTests",
             dependencies: ["Router"]),

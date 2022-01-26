@@ -33,3 +33,19 @@ public class GoAssembly: Assembly {
     
 
 }
+
+@available(iOS 13.0, *)
+class SetupGo {
+    static let container = Container()
+    static let assembler = Assembler([
+        ModuleLoginAssembly(),
+        MockWireframeAssembly(),
+        GoAssembly()
+    ],container: container)
+    
+    static let goViewController = assembler.resolver.resolve(GoViewController.self)!
+    //
+    //
+    //
+    //
+}

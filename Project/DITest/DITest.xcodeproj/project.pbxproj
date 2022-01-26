@@ -18,12 +18,12 @@
 		AA5EAF0927A07AB9007A31BD /* Helpers in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0827A07AB9007A31BD /* Helpers */; };
 		AA5EAF0B27A07C84007A31BD /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0A27A07C84007A31BD /* Router */; };
 		AA5EAF1027A07F7C007A31BD /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF0F27A07F7C007A31BD /* Wireframe.swift */; };
-		AA5EAF1327A07FC7007A31BD /* WireframeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */; };
 		AA5EAF1827A08725007A31BD /* PresentationAway in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1727A08725007A31BD /* PresentationAway */; };
 		AA5EAF1A27A08888007A31BD /* Module-login in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1927A08888007A31BD /* Module-login */; };
 		AA5EAF1C27A1328C007A31BD /* PresentationGo in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1B27A1328C007A31BD /* PresentationGo */; };
 		AA5EAF1E27A1360E007A31BD /* PresentationNew in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1D27A1360E007A31BD /* PresentationNew */; };
 		AA5EAF2027A137A5007A31BD /* PresentationNext in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF1F27A137A5007A31BD /* PresentationNext */; };
+		AA5EAF2227A13B4D007A31BD /* WireframeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF2127A13B4D007A31BD /* WireframeAssembly.swift */; };
 		AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CA627957261001DD1F5 /* ViewModel.swift */; };
 		AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CB327958E89001DD1F5 /* HomePresenter.swift */; };
 		AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A992797FD010090C2ED /* RxCocoa */; };
@@ -76,8 +76,8 @@
 		AA479C252796E58000F77211 /* MoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreRouter.swift; sourceTree = "<group>"; };
 		AA479C282796E7D900F77211 /* MoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAssembly.swift; sourceTree = "<group>"; };
 		AA5EAF0F27A07F7C007A31BD /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
-		AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeAssembly.swift; sourceTree = "<group>"; };
 		AA5EAF1427A08578007A31BD /* MyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyModule; path = "../DITest-module/MyModule"; sourceTree = "<group>"; };
+		AA5EAF2127A13B4D007A31BD /* WireframeAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeAssembly.swift; sourceTree = "<group>"; };
 		AA683CA627957261001DD1F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AA683CB327958E89001DD1F5 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		AAEA4D4C27913D2F007DD383 /* DITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,7 +209,7 @@
 		AA5EAF1127A07FAD007A31BD /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				AA5EAF1227A07FC7007A31BD /* WireframeAssembly.swift */,
+				AA5EAF2127A13B4D007A31BD /* WireframeAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -499,7 +499,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5EAF1327A07FC7007A31BD /* WireframeAssembly.swift in Sources */,
 				AAEA4D9C279152D0007DD383 /* MainAssembly.swift in Sources */,
 				AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */,
 				AAEA4D962791511D007DD383 /* ViewController.swift in Sources */,
@@ -510,6 +509,7 @@
 				AA479C1D2796E52800F77211 /* MoreViewController.swift in Sources */,
 				AA479C292796E7D900F77211 /* MoreAssembly.swift in Sources */,
 				AAF354672791A0730052EF08 /* HomeViewController.swift in Sources */,
+				AA5EAF2227A13B4D007A31BD /* WireframeAssembly.swift in Sources */,
 				AA479C262796E58000F77211 /* MoreRouter.swift in Sources */,
 				AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */,
 				AA479C242796E56B00F77211 /* MoreEntity.swift in Sources */,
