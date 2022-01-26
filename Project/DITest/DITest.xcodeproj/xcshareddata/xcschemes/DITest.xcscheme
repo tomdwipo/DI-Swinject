@@ -39,16 +39,6 @@
                ReferencedContainer = "container:DITest.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AAEA4D6B27913D32007DD383"
-               BuildableName = "DITestUITests.xctest"
-               BlueprintName = "DITestUITests"
-               ReferencedContainer = "container:DITest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
