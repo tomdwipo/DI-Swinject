@@ -14,7 +14,6 @@
 		AA479C242796E56B00F77211 /* MoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C232796E56B00F77211 /* MoreEntity.swift */; };
 		AA479C262796E58000F77211 /* MoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C252796E58000F77211 /* MoreRouter.swift */; };
 		AA479C292796E7D900F77211 /* MoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C282796E7D900F77211 /* MoreAssembly.swift */; };
-		AA479C3C2797F96300F77211 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AA479C3B2797F96300F77211 /* Swinject */; };
 		AA5EAF0927A07AB9007A31BD /* Helpers in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0827A07AB9007A31BD /* Helpers */; };
 		AA5EAF0B27A07C84007A31BD /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = AA5EAF0A27A07C84007A31BD /* Router */; };
 		AA5EAF1027A07F7C007A31BD /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF0F27A07F7C007A31BD /* Wireframe.swift */; };
@@ -26,9 +25,6 @@
 		AA5EAF2227A13B4D007A31BD /* WireframeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EAF2127A13B4D007A31BD /* WireframeAssembly.swift */; };
 		AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CA627957261001DD1F5 /* ViewModel.swift */; };
 		AA683CB427958E89001DD1F5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA683CB327958E89001DD1F5 /* HomePresenter.swift */; };
-		AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A992797FD010090C2ED /* RxCocoa */; };
-		AAC53A9C2797FD010090C2ED /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A9B2797FD010090C2ED /* RxRelay */; };
-		AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAC53A9D2797FD010090C2ED /* RxSwift */; };
 		AAEA4D5027913D2F007DD383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D4F27913D2F007DD383 /* AppDelegate.swift */; };
 		AAEA4D5227913D2F007DD383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA4D5127913D2F007DD383 /* SceneDelegate.swift */; };
 		AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEA4D5827913D31007DD383 /* Assets.xcassets */; };
@@ -109,11 +105,7 @@
 				AA5EAF0B27A07C84007A31BD /* Router in Frameworks */,
 				AA5EAF1E27A1360E007A31BD /* PresentationNew in Frameworks */,
 				AA5EAF0927A07AB9007A31BD /* Helpers in Frameworks */,
-				AAC53A9A2797FD010090C2ED /* RxCocoa in Frameworks */,
-				AAC53A9E2797FD010090C2ED /* RxSwift in Frameworks */,
-				AAC53A9C2797FD010090C2ED /* RxRelay in Frameworks */,
 				AA5EAF1827A08725007A31BD /* PresentationAway in Frameworks */,
-				AA479C3C2797F96300F77211 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,10 +387,6 @@
 			);
 			name = DITest;
 			packageProductDependencies = (
-				AA479C3B2797F96300F77211 /* Swinject */,
-				AAC53A992797FD010090C2ED /* RxCocoa */,
-				AAC53A9B2797FD010090C2ED /* RxRelay */,
-				AAC53A9D2797FD010090C2ED /* RxSwift */,
 				AA5EAF0827A07AB9007A31BD /* Helpers */,
 				AA5EAF0A27A07C84007A31BD /* Router */,
 				AA5EAF1727A08725007A31BD /* PresentationAway */,
@@ -458,8 +446,6 @@
 			);
 			mainGroup = AAEA4D4327913D2F007DD383;
 			packageReferences = (
-				AA479C3A2797F96300F77211 /* XCRemoteSwiftPackageReference "Swinject" */,
-				AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = AAEA4D4D27913D2F007DD383 /* Products */;
 			projectDirPath = "";
@@ -791,31 +777,7 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		AA479C3A2797F96300F77211 /* XCRemoteSwiftPackageReference "Swinject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/Swinject.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		AA479C3B2797F96300F77211 /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AA479C3A2797F96300F77211 /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
-		};
 		AA5EAF0827A07AB9007A31BD /* Helpers */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Helpers;
@@ -843,21 +805,6 @@
 		AA5EAF1F27A137A5007A31BD /* PresentationNext */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PresentationNext;
-		};
-		AAC53A992797FD010090C2ED /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		AAC53A9B2797FD010090C2ED /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		AAC53A9D2797FD010090C2ED /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AAC53A982797FD010090C2ED /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
