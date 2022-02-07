@@ -10,11 +10,15 @@ import Swinject
 import SwiftUI
 import PresentationAway
 import Router
+import PresentationNext
 
 class WireframeAssembly: Assembly {
     func assemble(container: Container) {
         container.register(RouterProtocol.self) { _ in
             Wireframe()
         }
+        
+     
+        
     }
 }

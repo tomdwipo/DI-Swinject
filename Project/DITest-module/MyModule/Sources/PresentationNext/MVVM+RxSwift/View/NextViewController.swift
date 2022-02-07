@@ -9,14 +9,18 @@ import UIKit
 import RxSwift
 import Router
 
-public class NextViewController: UIViewController {
+public protocol NextView: UIViewController {
+    func tapped(_ sender: UIButton)
+}
+
+open class NextViewController: UIViewController, NextView {
 
     @IBOutlet weak var textlabel: UILabel!
     var viewModel: NextViewModel?
     let disposeBag = DisposeBag()
     var router: RouterProtocol!
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         viewModel?
               .resultText
@@ -26,9 +30,9 @@ public class NextViewController: UIViewController {
               }).disposed(by: disposeBag)
 
     }
-  
     
-    @IBAction func tapped(_ sender: Any) {
+    
+    @IBAction open func tapped(_ sender: UIButton) {
         viewModel?.updateText()
     }
     

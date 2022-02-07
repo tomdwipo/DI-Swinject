@@ -37,7 +37,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c4-6p-e3m">
                     <rect key="frame" x="20" y="155" width="374" height="30"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="page"/>
                     <connections>
                         <action selector="nextPage:" destination="-1" eventType="touchUpInside" id="m97-Zo-yVq"/>
                     </connections>

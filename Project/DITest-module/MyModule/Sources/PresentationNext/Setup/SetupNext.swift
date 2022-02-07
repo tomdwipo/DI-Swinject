@@ -22,13 +22,13 @@ public class NextAssembly: Assembly {
             return resolve
         }
         
-        container.register(NextViewController.self) { r in
+        container.register(NextView.self) { r in
             let resolve = NextViewController(nibName: String(describing: NextViewController.self), bundle: Bundle.module.self)
             resolve.router = r.resolve(RouterProtocol.self)!
             resolve.viewModel = r.resolve(NextViewModel.self)!
             return resolve
         }
         
-        
     }
 }
+
